@@ -1,3 +1,13 @@
+
+
+
+/* 
+ JavaScript Object Notation (JSON) 
+ JavaScript Object Notation is an open data interchange format that is both human and machine-readable.
+*/
+
+
+
 const user = {id: 1, name: "Gorib Amir", job: 'actor'};
 // JavaScript Object Notation (JSON)
 const stringifyUser = JSON.stringify(user);
