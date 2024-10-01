@@ -12,8 +12,8 @@ const hideLoading = () => {
 
 
 const newPost = {
-    title: "foo",
-    body: "bar",
+    title: "New title New title New title",
+    body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nemo accusamus eligendi saepe, est voluptate.",
     userId: 11
 }
 
