@@ -6,6 +6,10 @@
     <title>JSON, API</title>
 
     <style>
+        body{
+            margin: 20px;
+        }
+
         .post{
             background-color:cadetblue;
             color: rgb(233, 229, 229);
@@ -27,6 +31,11 @@
             font-size: 20px;
             font-weight: 600;
             margin-left: 50px;
+        }
+        .postingBtn{
+            margin: 20px;
+            padding: 10px 20px; 
+            cursor: pointer;
         }
     </style>
 
@@ -50,12 +59,12 @@
     <main>
         <section>
             <h3>All Posts are here</h3>
-            <button onclick="createNewPost()">Create New Post</button> <span id="loader" class="loader hidden">Posting...</span>
+            <button onclick="createNewPost()" class="postingBtn">Create New Post</button> <span id="loader" class="loader hidden">Posting...</span>
             <div id="postsContainer">
 
             </div>
         </section>
-    </main> 
+    </main>
 
     <script src="./JS/fetch.js"></script>
     <script src="./JS/app.js"></script>
