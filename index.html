@@ -4,6 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSON, API</title>
+
+    <style>
+        .post{
+            background-color:cadetblue;
+            color: rgb(233, 229, 229);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px;
+        }
+        .newPost{
+            background-color:rgb(229, 106, 240);
+            color: rgb(233, 229, 229);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px;
+        }
+        .hidden{
+            display: none;
+        }
+        .loader{
+            font-size: 20px;
+            font-weight: 600;
+            margin-left: 50px;
+        }
+    </style>
+
 </head>
 <body> 
 
@@ -16,8 +42,25 @@
         </ul>
     </div>
 
+    <!-- Post new data -->
+    <header></header>
+        <h1>Display All Post</h1>
+    </header>
+
+    <main>
+        <section>
+            <h3>All Posts are here</h3>
+            <button onclick="createNewPost()">Create New Post</button> <span id="loader" class="loader hidden">Posting...</span>
+            <div id="postsContainer">
+
+            </div>
+        </section>
+    </main> 
+
     <script src="./JS/fetch.js"></script>
     <script src="./JS/app.js"></script>
     <script src="./JS/index.js"></script>
+    <script src="./JS/post.js"></script>
+    <script src="./JS/createPost.js"></script>
 </body>
 </html>

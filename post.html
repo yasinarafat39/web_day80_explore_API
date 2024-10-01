@@ -13,6 +13,21 @@
             padding: 15px;
             margin: 20px;
         }
+        .newPost{
+            background-color:rgb(229, 106, 240);
+            color: rgb(233, 229, 229);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px;
+        }
+        .hidden{
+            display: none;
+        }
+        .loader{
+            font-size: 20px;
+            font-weight: 600;
+            margin-left: 50px;
+        }
     </style>
 </head>
 <body>
@@ -23,6 +38,7 @@
     <main>
         <section>
             <h3>All Posts are here</h3>
+            <button onclick="createNewPost()">Create New Post</button> <span id="loader" class="loader hidden">Posting...</span>
             <div id="postsContainer">
 
             </div>
@@ -30,5 +46,6 @@
     </main>
 
     <script src="./JS/post.js"></script>
+    <script src="./JS/createPost.js"></script>
 </body>
 </html>
